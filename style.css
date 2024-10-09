@@ -51,9 +51,7 @@ img {
   vertical-align: top;  /* Aligns images to the top if heights differ */
 }
 
-.image-container {
-  text-align: center;  /* Centers the inline-block elements (images) */
-}
+
 
 .container2 {
   display: grid;
