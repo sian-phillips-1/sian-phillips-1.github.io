@@ -1,9 +1,73 @@
 body {
   font-family: 'Courier New', monospace;
-  text-align: center;
+  text-align: left;
   padding: 50px;
 }
 
 h1 {
   color: #333;
+ line-height: 0.75;
+}
+
+.container {
+  display: flex; /* Enables flexbox */
+  align-items: normal; /* Align items vertically */
+}
+
+.container img {
+  margin-right: 20px; /* Adds space between the image and text */
+  max-width: 150px; /* Adjust the image size */
+}
+
+ /* Apply a max-width to the body or a container element */
+ .container article {
+  max-width: 800px; /* Change to your desired width */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 20px; /* Optional: Add padding */
+}
+
+img {
+  display: block;       /* Makes the image a block-level element */
+  margin-left: auto;    /* Automatically calculate left margin */
+  margin-right: auto;   /* Automatically calculate right margin */
+}
+
+.background-container {
+  background-image: url('cover_image.jpg');  /* Path to your image */
+  background-size: cover;    /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the background image */
+  height: 200px;             /* Height of the container */           
+  justify-content: bottom;   /* Centers text horizontally */
+  align-items: flex-end;       /* Centers text vertically */
+  color: #333;              /* Text color */
+  font-size: 1.4em;            /* Font size for the text */
+  text-align: left;        /* Center the text */
+  padding: 20px;
+
+}
+
+.inline-image {
+  display: inline-block;
+  vertical-align: top;  /* Aligns images to the top if heights differ */
+}
+
+.image-container {
+  text-align: center;  /* Centers the inline-block elements (images) */
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* Two columns: one for paragraph, one for image grid */
+  gap: 20px;  /* Optional: spacing between the paragraph and image grid */
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* 2x2 grid for images */
+  gap: 10px;  /* Space between images */
+}
+
+.image-grid img {
+  width: 100%;  /* Ensures each image takes up full space of its grid cell */
+  height: auto; /* Maintain image aspect ratio */
 }
