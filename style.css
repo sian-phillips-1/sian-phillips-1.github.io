@@ -69,3 +69,9 @@ img {
   width: 100%;  /* Ensures each image takes up full space of its grid cell */
   height: auto; /* Maintain image aspect ratio */
 }
+
+.narrow {
+  width: 50%; /* Adjust this value */
+
+  text-align: left;
+}
