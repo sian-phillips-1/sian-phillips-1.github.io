@@ -33,7 +33,7 @@ img {
 }
 
 .background-container {
-  background-image: url('cover_image.jpg');  /* Path to your image */
+  background-image: url('images/cover_image.jpg');  /* Path to your image */
   background-size: cover;    /* Ensures the image covers the entire container */
   background-position: center; /* Centers the background image */
   height: 200px;             /* Height of the container */           
